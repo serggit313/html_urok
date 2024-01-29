@@ -1,0 +1,68 @@
+@media screen and (max-width: 1240px)
+{
+    .container 
+    {
+        max-width: 900px;
+    }
+
+    .header_desctop
+    {
+        display: none;
+    }
+
+    .header_tablet
+    {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    .header_tablet
+    {
+        display: none;
+    }
+
+    .header_mobile
+    {
+        display: block;
+    }
+
+    .container 
+    {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .header_mobile_topline_content_logo a img
+    {
+        width: 125px;
+    }
+
+    .header_mobile_topline_content_links a 
+    {
+        margin-right: 5px;
+    }
+
+    .header_mobile_topline_content_burgermenu 
+    {
+        padding: 0 5px;
+    }
+
+    .header_mobile_topline_content_burgermenu > div {
+        margin-right: 7px;
+    }
+
+    .header_mobile_topline_content_links 
+    {
+        padding: 0 5px;
+    }
+
+    .header_mobile_burgermenu_conent_cities 
+    {
+        width: 100%;
+    }
+}
+

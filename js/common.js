@@ -59,6 +59,8 @@ $(document).ready(function () {
 
 
 
+
+
 	// Выпадающий список_2 у десктопного меню
 	let li_has_children_conent_list = document.querySelector('.li_has_children_conent_list');
 	let conent_list_submenu = document.querySelector('.conent_list_submenu');
@@ -72,5 +74,19 @@ $(document).ready(function () {
 	
 	conent_list_submenu.addEventListener('click', function(event) {
 	  event.stopPropagation(); // Остановка всплытия события
+	});
+
+
+
+
+
+	// Слайдер блок 2
+	$('.block_2_slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: document.querySelector('.block_2_slider_btn_prev'),
+	    nextArrow: document.querySelector('.block_2_slider_btn_next'),
+		dots:true,
 	});
 });

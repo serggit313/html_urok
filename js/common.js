@@ -89,4 +89,17 @@ $(document).ready(function () {
 	    nextArrow: document.querySelector('.block_2_slider_btn_next'),
 		dots:true,
 	});
+
+
+	// Слайдер блок 2 для мобильника
+	$('.block_2_content_mobile_slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: document.querySelector('.block_2_content_mobile_slider_btn_prev'),
+	    nextArrow: document.querySelector('.block_2_content_mobile_slider_btn_next'),
+		dots:true,
+	});
+
+	
 });

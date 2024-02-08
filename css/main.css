@@ -1252,7 +1252,6 @@ img, svg
 {
 	display: none;
 	border-bottom: 1px solid #E5EAF3;
-	margin-bottom: 100px;
 }
 
 .block_1_mobile_content_title 
@@ -1468,7 +1467,6 @@ img, svg
 .block_2
 {
 	border-bottom: 1px solid #E5EAF3;
-	margin-bottom: 100px;
 }
 
 .block_2_content
@@ -1514,9 +1512,16 @@ img, svg
 	margin-bottom: 25px;
 }
 
-.block_2_slider_item > div:first-child
+.block_2_slider_item_img
 {
 	display: flex;
+}
+
+.block_2_slider_item_img_mob
+{
+	display: none;
+	width: 50%;
+	
 }
 
 .block_2_slider_item > div:last-child > span
@@ -1614,5 +1619,115 @@ img, svg
 {
 	opacity: 0px !important;
 	color: #FFF;
+}
+
+
+/*------------------- ADAPTIVE BLOCK 2 -------------------*/
+.block_2_mobile
+{
+	display: none;
+	padding: 0px 15px;
+	margin-bottom: 100px;
+	border-bottom: 1px solid #E5EAF3;
+}
+
+.block_2_content_mobile
+{
+	padding: 40px 0px;
+	border-left: 1px solid #E5EAF3;
+	border-right: 1px solid #E5EAF3;
+	position: relative;
+}
+
+.block_2_content_mobile_slider_item > div:first-child img
+{
+	width: 100%;
+}	
+
+.block_2_content_mobile_slider_item > div:last-child
+{
+	padding: 30px 10px;
+	background: #F7F7F9;
+}
+
+.block_2_content_mobile_slider_item_title span
+{
+	display: inline-block;
+	color: rgb(207, 9, 83);
+	font-family: "ManropeSemibold";
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.block_2_content_mobile_slider_item_title h2
+{
+	color: rgb(36, 44, 60);
+	font-family: "ManropeSemibold";
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 33px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+.block_2_content_mobile_slider_item > div:last-child > span
+{
+	display: inline-block;
+	color: rgb(106, 113, 129);
+	font-family: "ManropeRegular";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	text-align: left;
+	margin-bottom: 12px;
+}
+
+.block_2_content_mobile_slider_item > div:last-child a
+{
+	background: rgb(207, 9, 83);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.block_2_content_mobile_slider_item > div:last-child a span
+{
+	display: flex;
+	align-items: center;
+	padding: 11px 0px;
+	color: rgb(255, 255, 255);
+	font-family: "ManropeRegular";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.block_2_content_mobile_slider_item > div:last-child a span:last-child
+{
+	margin-left: 10px;
+}
+
+.block_2_mobile .slick-dots
+{
+	bottom: -36px;
+}
+
+.block_2_content_mobile_slider_btn_prev
+{
+	position: absolute;
+	bottom: 28px;
+	left: 15px;
+}
+
+.block_2_content_mobile_slider_btn_next
+{
+	position: absolute;
+	bottom: 28px;
+	right: 15px;
 }
 /*------------------- END BLOCK 2 -------------------*/
